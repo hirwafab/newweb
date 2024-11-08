@@ -1,0 +1,382 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+}
+.flag h1 {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*.flag img {
+    width: 50px;
+    height: auto;
+}*/
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    display: block;
+}
+.menu a:hover {
+    background-color:  rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 40px; /* Adjust based on navbar height */
+    background-color: black;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block; /* Show sub-tabs on hover */
+}
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Show dropdown when active */
+.dropdown-content.show {
+    display: block;
+}
+
+
+/* Welcome Section with Background Image */
+.welcome-section {
+    height: 90vh;
+    background-image: url('image1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 60px;
+}
+.welcome-text h1 {
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.welcome-text p{
+    
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.featured-attractions {
+    padding: 50px 20px;
+    background-color: burlywood;
+    text-align: center;
+}
+
+.featured-attractions h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.attractions-grid {
+    background-color: #666;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.attraction {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.attraction img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.attraction h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.attraction p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+.latest-news {
+    padding: 50px 20px;
+    background-color: grey;
+    text-align: center;
+}
+
+.latest-news h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.news-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.news-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.news-item button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.news-item button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+/* Mobile Responsiveness */
+/* Media Queries for Responsiveness */
+/* Responsive Styles */
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .company-name h1 {
+        font-size: 20px;
+    }
+
+    .welcome-section {
+        height: auto;
+        padding: 20px;
+    }
+
+    .welcome-text h1 {
+        font-size: 36px;
+    }
+
+    .welcome-text p {
+        font-size: 18px;
+    }
+
+    .featured-attractions {
+        padding: 30px 20px;
+    }
+
+    .featured-attractions h2 {
+        font-size: 28px;
+    }
+
+    .attractions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .attraction {
+        padding: 15px;
+    }
+
+    .attraction h3 {
+        font-size: 20px;
+    }
+
+    .attraction p {
+        font-size: 14px;
+    }
+
+    .latest-news {
+        padding: 30px 20px;
+    }
+
+    .latest-news h2 {
+        font-size: 28px;
+    }
+
+    .news-item {
+        padding: 15px;
+    }
+
+    .news-item h3 {
+        font-size: 20px;
+    }
+
+    .news-item p {
+        font-size: 14px;
+    }
+
+    .news-item button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .company-name h1 {
+        font-size: 18px;
+    }
+
+    .welcome-section {
+        height: auto;
+        padding: 20px;
+    }
+
+    .welcome-text h1 {
+        font-size: 28px;
+    }
+
+    .welcome-text p {
+        font-size: 16px;
+    }
+
+    .featured-attractions {
+        padding: 20px 10px;
+    }
+
+    .featured-attractions h2 {
+        font-size: 24px;
+    }
+
+    .attractions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .attraction {
+        padding: 10px;
+    }
+
+    .attraction h3 {
+        font-size: 18px;
+    }
+
+    .attraction p {
+        font-size: 12px;
+    }
+
+    .latest-news {
+        padding: 20px 10px;
+    }
+
+    .latest-news h2 {
+        font-size: 24px;
+    }
+
+    .news-item {
+        padding: 10px;
+    }
+
+    .news-item h3 {
+        font-size: 18px;
+    }
+
+    .news-item p {
+        font-size: 12px;
+    }
+
+    .news-item button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
