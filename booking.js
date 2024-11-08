@@ -28,6 +28,6 @@ function showConfirmationMessage() {
 }
 
 function goBackToHome() {
-    window.location.href = 'index.html#latest-news';
+    window.location.href = 'index.html';
 }
 
